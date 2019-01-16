@@ -1,10 +1,11 @@
 vscode安装
 官网下载安装
 百度更改语言
-自定义vscode插件安装位置
+// 自定义vscode插件安装位置
 
 vscode快捷键
 按 ctrl+shift+p 查找设置文件
+Ctrl + W    关闭编辑器
 
 设置定位到终端的快捷键：打开键盘配置文件，搜索focus terminal，找到聚焦到终端的命令，添加ctrl+2（删除被占用的）
     {
@@ -22,4 +23,24 @@ vscode快捷键
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
-另一方面，定位到文档编辑器可以使用已有的ctrl+1快捷键，定位到资源管理器用ctrl+shift+e
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus"
+    }    
+另一方面，定位到文档编辑器可以使用已有的ctrl+1快捷键，定位到资源管理器用ctrl+shift+e，或者更简单的ctrl+0
